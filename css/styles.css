@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+}
+
+nav{
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    box-shadow:  0 0 9px 0 black;
+    position: fixed;
+    z-index: 1;
+    
+ }
+ 
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logo-container{
+    margin-left: 10px;
+    
+} 
+.menu-container a{
+    margin-left: 30px;
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    }
+.menu-container a:hover{
+    border-bottom:skyblue 4px solid;
+    transition: 0.6s;
+    margin-bottom:4px;
+   
+}
+
+.img-container img{
+   width: 100%;
+   height: 600px;
+   object-fit: cover;
+   border-radius: 4px;
+   border: skyblue 5px solid;
+   box-shadow: 0 4px 5px -2px gray;
+}
+
+/*acerca*/
+#acerca{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.acerca-container{
+    display: flex;
+    flex-wrap: wrap;
+     width: 93%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0;
+}
+.acerca-item-img{
+    display: inline-block;
+    width: 34%;
+    height: 500px;
+    padding: 10px;
+   
+    overflow: hidden;
+   
+    
+}
+.acerca-item-texto{
+    display: inline-block;
+    width: 60%;
+    height: 500px;
+    padding: 10px;
+    
+    text-align: justify;
+    overflow: hidden;
+   
+    
+}
+.acerca-item-texto p{
+    margin-top: 20px;
+      
+}
+.acerca-item-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*equipo*/
+.fa-heart{
+    color: red;
+} 
+
+
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.box{
+    display: inline-block;
+    width: 30%;
+    height: 500px;
+    padding: 10px;
+    margin: 10px;
+    border: rgba(185, 185, 185, 0.9) 2px solid;
+    text-align: center;
+    overflow: hidden;
+
+}
+.box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.box:hover,:focus{
+   
+    box-shadow:  0 0 15px 0 black;
+ }
+ .titulo{
+     margin-top: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     
+
+ }
+ .titulo h2{
+     display: inline-block;
+     border-bottom: skyblue 4px solid;
+     padding-left: 40px;
+     padding-right: 40px;
+     margin-bottom: 20px;
+     
+ }
+ /*proyectos*/
+ .proyectos-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.proyecto{
+    display: inline-block;
+    width: 30%;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow:  0 0 3px 0 black;
+    transform: scale(1);
+    transition: transform 0.6s;
+    text-align: center;
+    overflow: hidden;
+
+}
+.proyecto:hover{
+    box-shadow:  0 0 8px 0 black;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+ .titulo{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     
+
+ }
+ .titulo h2{
+     display: inline-block;
+     border-bottom: skyblue 4px solid;
+     padding-left: 40px;
+     padding-right: 40px;
+     margin-bottom: 20px;
+     
+ }
+
+ /*contacto*/
+
+ .contacto-container{
+     margin-top: 60px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     background: url("../image/contacto5.jpg");
+     background-size: cover;
+     font-weight: bold;
+     width: 100%;
+     text-align: center;
+     height: 450px;
+ }
+ .contacto-container h2{
+  width: 100%;
+  font-size: 40px;
+ }
+ input[type="text"],input[type="email"]{
+     display: inline-box;
+     width: 49%;
+     margin-top: 30px;
+     padding: 10px 5px 10px 5px;
+    
+ }
+ input[type="submit"]{
+    display: inline-box;
+    padding: 5px 30px 5px 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+input[type="submit"]:hover{
+  background: skyblue;
+  color: black;
+  cursor: pointer;
+}
+ form textarea{
+     margin: 20px 0 0 0;
+     width: 99%;
+ }
+
+ /*footer*/
+ .firma-container{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     background: black;
+     color: blanchedalmond;
+     text-align: center;
+     height: 150px;
+     align-items: center;
+     justify-content: center;
+  }
+  .redes{
+      width: 100%;
+      margin: 15px 0 15px 0;
+     
+  }
+  .firma{
+      display: inline-block;
+      width: 100%;
+  }
+  .redes i{
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white;
+}
+  .redes i:hover{
+      color: skyblue;
+      cursor: pointer;
+  }
+ 
+ 
+@media only screen and (max-width: 600px) {
+    .nav-container{
+        flex-flow: column wrap;
+    }
+    .boxes{
+        flex-flow: column wrap;
+    }
+    
+
+    
+}
+
+
+
